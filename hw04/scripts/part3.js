@@ -1,3 +1,6 @@
+//Roberta Lee
+/* The getData function  */
+
 let language = 'English'
 let languageCode = 'en'
 let jsonData
@@ -48,7 +51,7 @@ const getData = () => {
             clearData()
 
             // output the text of the first tweet:
-            status = json.statuses[0]
+            /* status = json.statuses[0]
             div = document.createElement("div")
             div.className = "tweet"
             textNode = document.createTextNode(status.text)
@@ -63,25 +66,49 @@ const getData = () => {
             div.appendChild(textNode)
             document.getElementById("results").appendChild(div)
 
-            // 1. Describe what you think this code is doing.
+            // output the text of the third tweet:
+            status = json.statuses[2]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div)
 
-            // 2. output the text of the third tweet:
+            // output the text of the fourth tweet:
+            status = json.statuses[3]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div)
 
-            // 3. output the text of the fourth tweet:
+            // output the text of the fifth tweet:
+            status = json.statuses[4]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div) */
 
-            // 4. output the text of the fifth tweet:
+            // 1. Describe what you think this code is doing: The code outputs the text of the first and secont tweets outputed by the search text. status.text is the actual tweet text.//
+
+            // 2. output the text of the third tweet: RT @RealRedElephant: Member of #BlackLivesMatter DESTROYED by Vincent James and @rick_write of The Red Elephants #FreeSpeechWeek https://…
+
+            // 3. output the text of the fourth tweet: RT @twt_malaysia: Seriously speechless and heartbroken. Two pygmy elephants found dead without tusks in Eastern Sabah https://t.co/BkNk3G9…
+
+            // 4. output the text of the fifth tweet: Learning about the protection of elephants and why we should not ride elephants.@Y7NIST @NISTSchool… https://t.co/iK8LWZuh7J
 
             // 5. comment the code above, starting from after the clearData,
             //    and ending right before this comment. Then, un-comment the
             //    code below:
 
-            /*json.statuses.forEach(function (status) {
+            json.statuses.forEach(function (status) {
                 div = document.createElement("div")
                 div.className = "tweet"
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
                 document.getElementById("results").appendChild(div)
-            })*/
+            })
 
         })
 };

@@ -1,3 +1,13 @@
+//Roberta Lee
+
+/* The getData function gives the output formulated by the string; in this case, the weblink of the Twitter URL and whatever language is attached to it. */
+
+/* jsonData.statuses[0]: to reference/access the first element/status in the array. */
+
+/* jsonData.statuses[4].text: to get the text property of the fifth element in the array. */
+
+/* (Extra-credit) jsonData.statuses[1].user: To reference the name property, which is inside of the user property for the second status in the array. */
+
 let language = 'English'
 let languageCode = 'en'
 let jsonData
