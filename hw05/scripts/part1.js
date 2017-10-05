@@ -19,6 +19,24 @@ const setLanguage = (code) => {
     getData()
 }
 
+function reverseText(str) {
+  var splitString = str.split("");
+  var reverseArray = splitString.reverse();
+  var joinArray = reverseArray.join("");
+  return joinArray;
+}
+/* What this function does is split up the text array into individual characters,
+then reverse the order of characters, and lastly join the reversed characters into an complete arrays. */
+
+const reverseTweet = (tweetText) => {
+  if (tweetText.indexOf('#') === -1) {
+    return reverseText(tweetText)
+  } else {
+    return tweetText
+    }
+}
+
+
 const clearData = () => {
     const element = document.getElementById('results')
     while (element.firstChild) {
@@ -67,7 +85,7 @@ const getData = () => {
             json.statuses.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
-                textNode = document.createTextNode(status.text)
+                textNode = document.createTextNode(reverseTweet(status.text))
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })
