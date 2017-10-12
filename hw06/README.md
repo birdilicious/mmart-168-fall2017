@@ -18,6 +18,9 @@ This homework will require some googling. As a software engineer, a lot of what 
 ## PART II: Reading response
 Edit README.MD and write your reading response here!
 
+Leveling Up your JavaScript by Raymond Camden: https://developer.telerik.com/featured/leveling-up-your-javascript/
+This article explained a lot about how JavaScript works in an uncomplicated way for beginning JS programmers. There were plenty of jargons that I have not known about before, and so I learned about them in the article as well as did some research about the terms. Some of them were: linting, browser developer tools, JS script tag, MVC, client-side environment and features, JS frameworks, which terms were frameworks, design pattern, module pattern. Mainly it taught me important methods to declutter and to organize HTML and JS codes. It explained in depth about module packaging / organizing, which the author says is that simplest and easiest method.
+
 ## Part III: JavaScript Homework
 
 Twitter used to have a star to show that users had "favorited" a tweet. They changed it to a heart at some point, but, honestly, it's easier to make a star in Illustrator, so we're making our Twitter with stars.
