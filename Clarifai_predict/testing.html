@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clarifai</title>
+        <link rel = "stylesheet" href= "testing.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Revalia">
+
+    </head>
+    <body>
+      <header>
+        <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+        <script type="text/javascript" src="testing.js"></script>
+        <h1>Image Recognition App</h1>
+        <h2>Is it a robot?<h2>
+        <p>(Click on an image!)</p>
+      </header>
+
+      <main>
+
+          <img src="https://www.billboard.com/files/media/beyonce-grammys-show-06-2017-billboard-1548.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(false)">Is it a robot?</button>
+          <br><img src="https://www.bhphotovideo.com/images/images2500x2500/ubtech_alpha_1s_humanoid_robot_1204899.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://orig00.deviantart.net/2139/f/2013/035/f/0/robot_woman_by_obaeda-d5tu4kq.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(false)">Is it a robot?</button>
+          <br><img src="https://static8.depositphotos.com/1008006/858/i/950/depositphotos_8582046-stock-photo-robot-woman-stopping-you.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://www.cgstudio.com/imgd/l/47/5858c063a702483f328b4567/1826-robot-woman-d2016.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="http://www.roboticstrends.com/images/wide/toshibahumanoidces2015.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://bifidusdigestivum.files.wordpress.com/2015/08/deathrobot.jpg " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://spectrum.ieee.org/image/MjcxNzYxOQ.jpeg" onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://romaeuropa.net/wp-content/uploads/2016/10/evidenzasito.png " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://lh3.googleusercontent.com/0ps-0BSusAP9hJaWzjFsadR3ppYJb8Pk9pxECnqXbbQVPsS7ubUcwRWEM2lC_YXOEQRjHs7LQs9pqQi15x1Orw=s1000 " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://shawglobalnews.files.wordpress.com/2016/08/sophia2.jpg?quality=70&strip=all&strip=all " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://tribkswb.files.wordpress.com/2013/01/screen-shot-2013-01-14-at-6-29-55-pm.png " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="http://thumbor.assettype.com/tgdaily%2F2017-10%2Ff0d0c3f8-e10c-41d1-be10-c610d47f4be7%2Fman-845847_1280.jpg?fit=crop&crop=faces,top,right&w=1011&q=60&auto=format&fm=pjpg " onClick="identify(this)" />
+            <button id="test" onclick="popup(false)">Is it a robot?</button>
+          <br><img src="http://www.viewzone.com/robotworkers.future.jpg" onClick="identify(this)" />
+            <button id="test" onclick="popup(false)">Is it a robot?</button>
+          <br><img src="https://i.cbc.ca/1.3380443.1451391510!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/humanoid-robot-han.jpg " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://robots4autism.com/wp-content/uploads/IMG_9709.jpg " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+          <br><img src="https://i.pinimg.com/originals/c9/40/a8/c940a850941d82050fe496976cc8e566.jpg " onClick="identify(this)" />
+            <button id="test" onclick="popup(true)">Is it a robot?</button>
+
+
+        <div>
+
+          <br><img id="myImg" src="#" alt="Your Image!" height=200 width=100>
+          <br><img src="" id="user_image" onClick="identify(this)"/>
+          <br><label for="url">Image url:</label>
+          <input type="url" id="url" name="url">
+          <button id="submit" onclick="changeImage()">Submit it!</button>
+          <div id="results">
+        </div>
+
+      </main>
+
+      <footer>
+<br><a> Disclaimer: All images are gathered from the web and for limited educational, research and scholarly purposes. </a>
+
+<br><a> Propety of Roberta Lee </a>
+      </footer>
+    </body>
+</html>
